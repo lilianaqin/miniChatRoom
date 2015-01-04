@@ -39,7 +39,7 @@ public class privatechat extends JFrame{
 	public static GridBagLayout G = new GridBagLayout();
 	private GridBagConstraints c = new GridBagConstraints();
 	
-	private JComboBox fontName = null, fontSize = null, fontStyle = null, fontColor = null,
+	private JComboBox<String> fontName = null, fontSize = null, fontStyle = null, fontColor = null,
 			 fontBackColor = null;
 	String[] StrName = {"宋体","黑体","Dialog","Gulim"};
 	String[] StrSize = { "12", "14", "18", "22", "30", "40" };
@@ -66,11 +66,11 @@ public class privatechat extends JFrame{
 		doc = Content.getStyledDocument(); //get document of Content
 		ScrollText = new JScrollPane(Content);
 		
-		fontName = new JComboBox(StrName); // 字体名称
-		fontSize = new JComboBox(StrSize); // 字号
-		fontStyle = new JComboBox(StrStyle); // 样式
-		fontColor = new JComboBox(StrColor); // 颜色
-		fontBackColor = new JComboBox(StrBackColor); // 背景颜色
+		fontName = new JComboBox<String>(StrName); // 字体名称
+		fontSize = new JComboBox<String>(StrSize); // 字号
+		fontStyle = new JComboBox<String>(StrStyle); // 样式
+		fontColor = new JComboBox<String>(StrColor); // 颜色
+		fontBackColor = new JComboBox<String>(StrBackColor); // 背景颜色
 		
 		setLayout(G);
 		c.fill = GridBagConstraints.BOTH;

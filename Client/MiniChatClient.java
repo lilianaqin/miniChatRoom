@@ -12,7 +12,6 @@ import javax.swing.*;
 import javax.swing.text.*;
 
 import drawapp.DrawApp;
-import Client.privatechat.bppListener;
  
 public class MiniChatClient extends JFrame {
     
