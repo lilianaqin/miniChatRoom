@@ -1,0 +1,4 @@
+miniChatRoom
+============
+
+Java project - JICQ
